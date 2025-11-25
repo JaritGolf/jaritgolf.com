@@ -8,6 +8,10 @@ export default function SplitScrollSection() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
   const content = getHomepageContent().problem_section;
+  
+  if (!content) {
+    return null; // Component not used in current homepage
+  }
 
   useEffect(() => {
     const container = containerRef.current;

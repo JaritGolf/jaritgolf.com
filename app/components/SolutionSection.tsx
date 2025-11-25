@@ -6,6 +6,10 @@ import { getHomepageContent } from '@/lib/content';
 
 export default function SolutionSection() {
   const content = getHomepageContent().solution_section;
+  
+  if (!content) {
+    return null; // Component not used in current homepage
+  }
 
   return (
     <ScrollSection className="py-20 md:py-28 lg:py-32 px-4 md:px-6 lg:px-8 bg-white">
