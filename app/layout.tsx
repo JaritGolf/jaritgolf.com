@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "./components/Navigation";
-import ScrollDamping from "./components/ScrollDamping";
+// import ScrollDamping from "./components/ScrollDamping";
 import ScrollToTop from "./components/ScrollToTop";
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased bg-white text-black">
         <ScrollToTop />
-        <ScrollDamping />
+        {/* <ScrollDamping /> */}
         <Navigation />
         {children}
       </body>
