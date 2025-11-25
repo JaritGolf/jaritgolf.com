@@ -1,19 +1,21 @@
 import Stripe from 'stripe';
 
-if (!process.env.STRIPE_SECRET_KEY) {
-  throw new Error('STRIPE_SECRET_KEY is not defined in environment variables');
-}
-
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2024-11-20.acacia',
-  typescript: true,
-});
+// Only initialize Stripe if secret key is provided (allows visual testing without Stripe)
+export const stripe = process.env.STRIPE_SECRET_KEY && process.env.STRIPE_SECRET_KEY.startsWith('sk_')
+  ? new Stripe(process.env.STRIPE_SECRET_KEY, {
+      apiVersion: '2024-11-20.acacia',
+      typescript: true,
+    })
+  : null;
 
 // Create a checkout session
 export async function createCheckoutSession(
   items: Array<{ id: string; name: string; price: number; quantity: number; image: string }>,
   customerEmail?: string
 ): Promise<Stripe.Checkout.Session> {
+  if (!stripe) {
+    throw new Error('Stripe is not configured. Please set STRIPE_SECRET_KEY environment variable.');
+  }
   const line_items: Stripe.Checkout.SessionCreateParams.LineItem[] = items.map((item) => ({
     price_data: {
       currency: 'usd',
@@ -43,6 +45,9 @@ export async function createCheckoutSession(
 
 // Retrieve a checkout session
 export async function retrieveCheckoutSession(sessionId: string): Promise<Stripe.Checkout.Session> {
+  if (!stripe) {
+    throw new Error('Stripe is not configured. Please set STRIPE_SECRET_KEY environment variable.');
+  }
   return await stripe.checkout.sessions.retrieve(sessionId);
 }
 
@@ -51,6 +56,10 @@ export function constructWebhookEvent(
   payload: string | Buffer,
   signature: string
 ): Stripe.Event {
+  if (!stripe) {
+    throw new Error('Stripe is not configured. Please set STRIPE_SECRET_KEY environment variable.');
+  }
+  
   const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
   if (!webhookSecret) {
     throw new Error('STRIPE_WEBHOOK_SECRET is not defined');
