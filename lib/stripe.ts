@@ -3,7 +3,7 @@ import Stripe from 'stripe';
 // Only initialize Stripe if secret key is provided (allows visual testing without Stripe)
 export const stripe = process.env.STRIPE_SECRET_KEY && process.env.STRIPE_SECRET_KEY.startsWith('sk_')
   ? new Stripe(process.env.STRIPE_SECRET_KEY, {
-      apiVersion: '2024-11-20.acacia',
+      apiVersion: '2024-04-10',
       typescript: true,
     })
   : null;
