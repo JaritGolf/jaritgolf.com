@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'ElectromagneticLungs';
+  src: url('/fonts/ElectromagneticLungs.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Magnum';
+  src: url('/fonts/MAGNUM__.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --masters-green: #006747;
+  --soft-black: #1a1a1a;
+  --warm-white: #fafafa;
+  --border-soft: #e5e5e5;
+  --text-secondary: #666666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  overscroll-behavior: none;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  /* Scroll damping factor: 0 = no momentum, 1 = full momentum */
+  --scroll-damping: 0.3;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+@keyframes gentle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes expand-line {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 80px;
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .font-electromagnetic {
+    font-family: 'ElectromagneticLungs', sans-serif;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+  }
+  
+  .font-magnum {
+    font-family: 'Magnum', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .knewave-regular {
+    font-family: "Knewave", system-ui, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .hero-embossed {
+    text-shadow: 
+      5px 5px 0px rgba(255,255,255,0.9),
+      10px 10px 20px rgba(0,0,0,0.7),
+      0px 0px 40px rgba(255,255,255,0.4);
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
+  }
+  
+  .bg-masters-green {
+    background-color: var(--masters-green);
+  }
+  
+  .text-masters-green {
+    color: var(--masters-green);
+  }
+  
+  .border-masters-green {
+    border-color: var(--masters-green);
+  }
+  
+  .hover\:bg-masters-green:hover {
+    background-color: var(--masters-green);
+  }
+  
+  .hover\:text-masters-green:hover {
+    color: var(--masters-green);
+  }
+  
+  .hover\:border-masters-green:hover {
+    border-color: var(--masters-green);
+  }
+}
+

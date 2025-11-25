@@ -1,0 +1,246 @@
+{
+  "website": {
+    "homepage": {
+      "hero_section": {
+        "brand": "The Speed Machine",
+        "headline": "MAKE MORE PUTTS",
+        "subheadline": "Tour-Level Distance Control Starts Here",
+        "cta_buttons": [
+          "Start Your Journey",
+          "Watch Demo"
+        ]
+      },
+      "problem_scroll_section": {
+        "header": "Any of These Sound Familiar?",
+        "header_secondary": "It's Time to Find Your Feel",
+        "cards": [
+          {
+            "title": "Can't Get Out",
+            "subtitle": "Can't get to practice often or at all"
+          },
+          {
+            "title": "Poor Feedback Loop",
+            "subtitle": "No data means guesswork, not precision."
+          },
+          {
+            "title": "Limited Time",
+            "subtitle": "Busy schedules need efficient practice solutions."
+          },
+          {
+            "title": "Not Enough Reps",
+            "subtitle": "Half of the time you are chasing balls"
+          },
+          {
+            "title": "Tech Gap",
+            "subtitle": "Full swing has Sims and Launch Monitors. Putting has little to nothing."
+          }
+        ]
+      },
+      "solution_scroll_section": {
+        "header": "Jarit Golf Proudly Brings",
+        "header_secondary": "Welcome to The Speed Machine",
+        "header_tertiary": "A New Way to Putt",
+        "cards": [
+          {
+            "title": "Practice Anytime, Anywhere",
+            "subtitle": "Home or Office. Ready when you are."
+          },
+          {
+            "title": "Instant Feedback",
+            "subtitle": "Real data no guesswork. Build precise distance references."
+          },
+          {
+            "title": "Never Move an Inch",
+            "subtitle": "Maximize Every Minute."
+          },
+          {
+            "title": "Unlimited Reps",
+            "subtitle": "Pick a speed. Hit it over and over and over again"
+          },
+          {
+            "title": "Tech For Putting",
+            "subtitle": "Launch monitor precision for your putter. Track, measure, improve with data."
+          }
+        ]
+      },
+      "product_pin_section": {
+        "slides": [
+          {
+            "label": "",
+            "subtitle": ""
+          },
+          {
+            "label": "Distance Control Made Easy",
+            "subtitle": "Practice at Home or in the Office Whenever You Want."
+          },
+          {
+            "label": "Designed for Convenience",
+            "subtitle": "Pick Up the Putter and Hit Putts Within Ten Seconds"
+          },
+          {
+            "label": "Get Incredible Feedback",
+            "subtitle": "Know What You Are Doing and Build Confidence with Data"
+          },
+          {
+            "label": "Putt With Confidence on the Course",
+            "subtitle": "The Work You Put in on the Speed Machine Travels Seamlessly to the Course"
+          }
+        ]
+      },
+      "modes_section": {
+        "modes": [
+          {
+            "title": "Distance Mode",
+            "description": "Master your lag putting with precise distance feedback. Build the touch that keeps you inside the circle.",
+            "features": [
+              "3-50 foot range",
+              "Instant feedback",
+              "Progressive training"
+            ]
+          },
+          {
+            "title": "Speed Mode",
+            "description": "Perfect your stroke tempo and acceleration. Train the consistency that tour pros rely on.",
+            "features": [
+              "Tempo analysis",
+              "Acceleration tracking",
+              "Consistency metrics"
+            ]
+          },
+          {
+            "title": "Combine Mode",
+            "description": "Tournament pressure simulation. Randomized challenges that prepare you for competition.",
+            "features": [
+              "Pressure scenarios",
+              "Random challenges",
+              "Performance tracking"
+            ]
+          }
+        ]
+      },
+      "success_metrics_section": {
+        "header": "Proven Results From Our Community",
+        "stats": [
+          {
+            "metric": "2.3 Strokes",
+            "description": "Average improvement per round after 60 days"
+          },
+          {
+            "metric": "67%",
+            "description": "Reduction in three-putts for 15+ handicappers"
+          },
+          {
+            "metric": "4,000+",
+            "description": "Active users improving daily"
+          },
+          {
+            "metric": "92%",
+            "description": "User satisfaction rating"
+          }
+        ]
+      },
+      "features_grid": {
+        "header": "Performance Features Validated by PGA Professionals",
+        "features": [
+          {
+            "title": "Tour-Speed Accuracy",
+            "description": "Same precision used in professional fitting"
+          },
+          {
+            "title": "Green Reading Integration",
+            "description": "Pairs with AimPoint methodology"
+          },
+          {
+            "title": "Pelz-Inspired Distances",
+            "description": "Practice Dave Pelz's proven distance zones"
+          },
+          {
+            "title": "Pressure Training",
+            "description": "Combine mode simulates tournament conditions"
+          },
+          {
+            "title": "Progress Analytics",
+            "description": "Track strokes gained putting improvements"
+          },
+          {
+            "title": "Video Integration",
+            "description": "Sync with V1 Golf and OnForm apps"
+          }
+        ]
+      },
+      "training_philosophy_section": {
+        "header": "Built on Proven Putting Science",
+        "philosophies": [
+          {
+            "title": "Speed First, Line Second",
+            "content": "Following Dr. Craig Farnsworth's research: proper speed makes more putts than perfect line."
+          },
+          {
+            "title": "Deliberate Practice",
+            "content": "Based on Anders Ericsson's expertise research. Quality repetitions with immediate feedback accelerate improvement."
+          },
+          {
+            "title": "Pressure Inoculation",
+            "content": "Combine mode creates competitive pressure, following Dr. Bob Rotella's mental game principles."
+          }
+        ]
+      },
+      "cta_section": {
+        "header": "Join the Distance Control Revolution",
+        "description": "Join thousands of golfers who have transformed their putting game with data-driven practice.",
+        "buttons": [
+          "Get The Speed Machine",
+          "Read the White Paper"
+        ]
+      }
+    },
+    "product_page": {
+      "hero_section": {
+        "headline": "The Speed Machine: Validated by Teaching Professionals Worldwide",
+        "price": "$499",
+        "cta_buttons": [
+          "Add to Cart",
+          "Find a Demo Location"
+        ]
+      },
+      "product_details_section": {
+        "header": "Engineered for Serious Improvement",
+        "specs": [
+          {
+            "title": "Tour-Validated Tech",
+            "description": "Sensor technology used by 15 PGA Tour players"
+          },
+          {
+            "title": "Stimpmeter Accurate",
+            "description": "Calibrated to USGA standards"
+          },
+          {
+            "title": "Biomechanically Sound",
+            "description": "Promotes proper acceleration patterns"
+          },
+          {
+            "title": "Data Export",
+            "description": "Compatible with CoachEye and MyStats"
+          }
+        ]
+      },
+      "training_programs_section": {
+        "header": "Structured Improvement Pathways",
+        "programs": [
+          {
+            "title": "30-Day Foundation",
+            "description": "Build consistent speed control with graduated distance progressions. Based on Cameron McCormick's coaching methodology."
+          },
+          {
+            "title": "Strokes Gained Intensive",
+            "description": "6-week program targeting specific distance zones. Reduce three-putts by focusing on lag putting excellence."
+          },
+          {
+            "title": "Tournament Prep Protocol",
+            "description": "Pre-competition routine development. Practice under pressure with randomized combine challenges."
+          }
+        ]
+      }
+    }
+  }
+}
