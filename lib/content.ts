@@ -62,14 +62,38 @@ export interface CTASection {
   buttons: string[];
 }
 
+// Scroll section types for the horizontal scroll galleries
+export interface ScrollSectionCard {
+  title: string;
+  subtitle: string;
+}
+
+export interface ProblemScrollSection {
+  header: string;
+  header_secondary: string;
+  cards: ScrollSectionCard[];
+}
+
+export interface SolutionScrollSection {
+  header: string;
+  header_secondary: string;
+  header_tertiary: string;
+  cards: ScrollSectionCard[];
+}
+
 export interface HomepageContent {
   hero_section: HeroSection;
-  problem_section: ProblemSection;
-  solution_section: SolutionSection;
+  problem_scroll_section: ProblemScrollSection;
+  solution_scroll_section: SolutionScrollSection;
+  product_pin_section?: any; // Optional since it's used but not in old type
+  modes_section?: any; // Optional since it's used but not in old type
   features_grid: FeaturesGrid;
   success_metrics_section: SuccessMetricsSection;
   training_philosophy_section: TrainingPhilosophySection;
   cta_section: CTASection;
+  // Keep old names as optional for backward compatibility
+  problem_section?: ProblemSection;
+  solution_section?: SolutionSection;
 }
 
 export interface ProductHeroSection {
